@@ -2,6 +2,7 @@
 
 import time
 import RPi.GPIO as GPIO
+import os
 
 BUTTON_GPIO = os.environ['TRIALS_GPIO']
 GPIO.setmode(GPIO.BCM)
