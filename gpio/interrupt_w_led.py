@@ -20,10 +20,10 @@ def signal_handler(sig, frame):
 
 def button_callback(channel):
     if GPIO.input(BUTTON_GPIO):
-        print("Button pressed!")
+        print("Button released!")
         GPIO.output(LED_GPIO, GPIO.LOW)
     else:
-        print("Button released!")
+        print("Button pressed!")
         GPIO.output(LED_GPIO, GPIO.HIGH)
 
 
