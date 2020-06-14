@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-BUTTON_GPIO = os.environ['TRIALS_GPIO']
+BUTTON_GPIO = int(os.environ['TRIALS_GPIO'])
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(BUTTON_GPIO, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 pressed = False
