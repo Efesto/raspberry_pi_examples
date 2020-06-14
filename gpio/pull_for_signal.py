@@ -3,6 +3,9 @@
 import time
 import RPi.GPIO as GPIO
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 BUTTON_GPIO = os.environ['TRIALS_GPIO']
 GPIO.setmode(GPIO.BCM)
